@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastro Urbano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="imgs/logo.png" rel="icon" type="image/png">
+    <style>
+        /* Estilo do Carrossel de Frases */
+        .frase-carrossel {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #eaeaea;
+            color: rgb(8, 8, 8);
+            text-align: center;
+            padding: 2px 0;
+            z-index: 9999;
+            font-size: 10px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .frase-movendo {
+            display: inline-block;
+            animation: mover 25s linear infinite;
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Navbar customizada */
+        .nav-link-custom {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-link-custom:hover {
+            opacity: 0.6;
+        }
+
+        .btn-custom,
+        .btn-outline-light {
+            color: white;
+            border: 1px solid white;
+            background-color: transparent;
+        }
+
+        .btn-custom:hover,
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar {
+            margin-top: 22px;
+            height: 60px;
+            padding: 0 40px;
+            overflow: hidden;
+        }
+
+        @font-face {
+            font-family: 'Scream';
+            src: url('fonts/frost-scream.regular.otf') format('opentype');
+        }
+
+        .txt-custon {
+            font-family: 'Scream';
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            margin: 0 30px;
+        }
+
+        body {
+            background-color: #eaeaea;
+        }
+
+        .navbar .container-fluid {
+            position: relative;
+        }
+
+        .navbar-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Carrossel de Frases -->
+    <div class="frase-carrossel">
+        <div class="frase-movendo">
+            <span>🚀 Bem-vindo à Rastro Urbano! | 🏙️ Explore nossa nova coleção urbana! | 📦 Frete grátis para compras
+                acima de R$200! | 📲 Siga-nos no Instagram @rastro.urbano</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
+
+            <!-- Lado esquerdo -->
+            <div class="d-flex">
+                <a href="loja.html" class="nav-link-custom">Loja</a>
+                <a href="sobre.html" class="nav-link-custom">Sobre</a>
+                <a href="contato.html" class="nav-link-custom">Contato</a>
+            </div>
+
+            <!-- Centro -->
+            <a href="home.html" class="txt-custon navbar-center">Rastro Urbano</a>
+
+            <!-- Lado direito -->
+            <div class="d-flex align-items-center">
+                <a href="favoritos.html" class="nav-link-custom">
+                    <img src="imgs/coracao.png" alt="Favoritos" width="25" height="25">
+                </a>
+                <a href="carrinho.html" class="nav-link-custom">
+                    <img src="imgs/carrinho2.png" alt="Carrinho" width="25" height="25">
+                </a>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+        <h1>Carrinho de Compras</h1>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastro Urbano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="imgs/logo.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Carrossel de Frases -->
+    <div class="frase-carrossel bg-dark text-light">
+        <div class="frase-movendo bg-dark text-light">
+            <span>🚀 Bem-vindo à Rastro Urbano! | 🏙️ Explore nossa nova coleção urbana! | 📦 Frete grátis para compras
+                acima de R$200! | 📲 Siga-nos no Instagram @rastro.urbano</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
+
+            <!-- Lado esquerdo -->
+            <div class="d-flex">
+                <a href="perfil.html" class="nav-link-custom" style="margin-right: 80px;"><img src="imgs/perfil.png" alt="perfil" width="20" height="20"></a>
+                <a href="loja.html" class="nav-link-custom">Loja</a>
+                <a href="sobre.html" class="nav-link-custom">Sobre</a>
+                <a href="contato.html" class="nav-link-custom">Contato</a>
+            </div>
+
+            <!-- Centro -->
+            <a href="home.html" class="txt-custon navbar-center text-center">Rastro Urbano</a>
+
+            <!-- Lado direito -->
+            <div class="d-flex align-items-center">
+                <a href="favoritos.html" class="nav-link-custom">
+                    <img src="imgs/coracao.png" alt="Favoritos" width="25" height="25">
+                </a>
+                <a href="carrinho.html" class="nav-link-custom">
+                    <img src="imgs/carrinho2.png" alt="Carrinho" width="25" height="25">
+                </a>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <!-- Conteúdo principal -->
+    <h1 class="txt-custon" style="color: black; margin-top: 100px; font-size: 70px; text-align: center;">
+        Bem-vindo à Rastro Urbano
+    </h1>
+
+    <div class="container mt-5">
+        <input type="text" placeholder="Digite seu nome" class="form-control mb-3">
+        <button class="btn btn-custom">Enviar</button>
+        <br><br>
+        <input type="checkbox" id="bicicleta" name="bicicleta" value="Bike">
+        <label for="bicicleta">Eu tenho uma bicicleta</label><br>
+        <input type="checkbox" id="carro" name="carro" value="Car" checked>
+        <label for="carro">Eu tenho um carro</label><br><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </div>
+
+</body>
+
+</html>
