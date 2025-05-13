@@ -23,14 +23,24 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
-
+        <div class="container-fluid d-flex justify-content-start align-items-center">
+    
             <!-- Lado esquerdo -->
-            <div class="d-flex">
-                <a href="perfil.html" class="nav-link-custom" style="margin-right: 80px;"><img src="imgs/perfil.png" alt="perfil" width="20" height="20"></a>
-                <a href="loja.html" class="nav-link-custom">Loja</a>
-                <a href="sobre.html" class="nav-link-custom">Sobre</a>
-                <a href="contato.html" class="nav-link-custom">Contato</a>
+            <div class="d-flex align-items-center">
+                <a href="perfil.html" class="nav-link-custom me-3"><img src="imgs/perfil.png" alt="perfil" width="20" height="20"></a>
+                <a href="loja.html" class="nav-link-custom me-3">Loja</a>
+                <a href="sobre.html" class="nav-link-custom me-3">Sobre</a>
+                <a href="contato.html" class="nav-link-custom me-3">Contato</a>
+                <a href="https://www.instagram.com/rastro.urbano/" target="_blank" class="me-3">
+                    <img src="imgs/logo.instagram.png" class="img-rs" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/rastro.urbano" target="_blank" class="tiktok-icon me-3">
+                    <img src="imgs/tiktok.icon.png" alt="TikTok">
+                </a>
+            </div>
+    
+        </div>
+
             </div>
 
             <!-- Centro -->
@@ -55,40 +65,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-                <div class="card-txt">
-                    <h1 class="txt-custon-h1">Precisa de ajuda? <br> Fale conosco</h1>
-                    <h2 class="txt-custon" style="color: black; text-align: center;">Entre em contato com nossa equipe de suporte:</h2><br>
-                    <form class="grupo-nome txt-custon">
-                        <input required type="text" id="nome" style="width: 100%; height: 60px;">
-                        <label for="nome" style="font-size: 15px;">Nome</label><br><br>
-                    </form>
-                    <form class="grupo-nome txt-custon">
-                        <input required type="email" id="email" placeholder=" " style="width: 100%; height: 60px;"
-                            oninvalid="this.setCustomValidity('Esse email não é válido')" oninput="this.setCustomValidity('')">
-                        <label for="email" style="font-size: 15px;">Email</label>
-                        <span id="email-erro" style="display: none; color: red; font-size: 15px; margin-left: 5px; font-family: Arial, Helvetica, sans-serif;">Esse email não é válido</span>
-                        <br><br>
-                    </form>
-                    <form class="grupo-nome txt-custon">
-                        <textarea required id="assunto" placeholder=""
-                            oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px';"></textarea>
-                        <label for="assunto" style="font-size: 15px;">Assunto</label><br><br>
-                    </form>
-                    <form class="grupo-nome txt-custon">
-                        <textarea required id="mensagem" placeholder=""
-                            oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px';"></textarea>
-                        <label for="mensagem" style="font-size: 15px;">Mensagem</label><br><br>
-                    </form>
-                    <button class="btn-send">Enviar</button>
-                </div>
-    
-                <div class="card-txt-rs" style="flex: 1; max-width: 600px; border-radius: 10px;">
-                    <h1 class="txt-custon-h1">Redes Sociais</h1>
-                    <a href="https://www.instagram.com/rastro.urbano/" target="_blank"><img src="imgs/insta.png" class="img-rs"></a>
-                </div>
-        
-            </div>
-        </div>
+    <div class="card-txt">
+        <h1 class="txt-custon-h1">Precisa de ajuda? <br> Fale conosco</h1>
+        <h2 class="txt-custon" style="color: black; text-align: center;">Entre em contato com nossa equipe de
+            suporte:
+        </h2><br>
+        <form class="grupo-nome txt-custon">
+            <input required type="text" id="nome" style="width: 100%; height: 60px;">
+            <label for="nome" style="font-size: 15px;">Nome</label><br><br>
+        </form>
+        <form class="grupo-nome txt-custon">
+            <input required type="email" id="email" placeholder=" " style="width: 100%; height: 60px;"
+                oninvalid="this.setCustomValidity('Esse email não é válido')" oninput="this.setCustomValidity('')">
+            <label for="email" style="font-size: 15px;">Email</label>
+            <span id="email-erro"
+                style="display: none; color: red; font-size: 15px; margin-left: 5px; font-family: Arial, Helvetica, sans-serif;">Esse
+                email não é válido</span>
+            <br><br>
+        </form>
+        <form class="grupo-nome txt-custon">
+            <textarea required id="assunto" placeholder=""
+                oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px';"></textarea>
+            <label for="assunto" style="font-size: 15px;">Assunto</label><br><br>
+        </form>
+        <form class="grupo-nome txt-custon">
+            <textarea required id="mensagem" placeholder=""
+                oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px';"></textarea>
+            <label for="mensagem" style="font-size: 15px;">Mensagem</label><br><br>
+        </form>
+        <button class="btn-send">Enviar</button>
+    </div>
     <script>
         const emailInput = document.getElementById('email');
         const erroSpan = document.getElementById('email-erro');
