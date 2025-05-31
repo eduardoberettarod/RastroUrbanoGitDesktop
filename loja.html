@@ -21,126 +21,119 @@
         </div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid d-flex justify-content-start align-items-center">
-    
-            <!-- Lado esquerdo -->
-            <div class="d-flex align-items-center">
-                <a href="perfil.html" class="nav-link-custom me-3"><img src="imgs/perfil.png" alt="perfil" width="20" height="20"></a>
-                <a href="loja.html" class="nav-link-custom me-3">Loja</a>
-                <a href="sobre.html" class="nav-link-custom me-3">Sobre</a>
-                <a href="contato.html" class="nav-link-custom me-3">Contato</a>
-                <a href="https://www.instagram.com/rastro.urbano/" target="_blank" class="me-3">
-                    <img src="imgs/logo.instagram.png" class="img-rs" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/rastro.urbano" target="_blank" class="tiktok-icon me-3">
-                    <img src="imgs/tiktok.icon.png" alt="TikTok">
-                </a>
-            </div>
-    
-        </div>
-
-            </div>
-
-            <!-- Centro -->
-            <a href="home.html" class="txt-custon navbar-center text-center">Rastro Urbano</a>
-
-            <!-- Lado direito -->
-            <div class="d-flex align-items-center">
-                <a href="favoritos.html" class="nav-link-custom">
-                    <img src="imgs/coracao.png" alt="Favoritos" width="25" height="25">
-                </a>
-                <a href="carrinho.html" class="nav-link-custom">
-                    <img src="imgs/carrinho2.png" alt="Carrinho" width="25" height="25">
-                </a>
-                <form class="d-flex ms-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
-            </div>
-
-        </div>
-    </nav>
+    <div id="navbar"></div>
+    <script>
+        //Carregar conteúdo do navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o navbar:', error);
+            });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <div style="margin-top: 100px">
-        <h1 class="txt-custon-h1">
-            Loja
-        </h1>
-        <div class="container my-5">
-            <div class="row">
-                <!-- Produto -->
-                <div class="card col-md-3 container my-4">
-                    <img src="imgs/camisa1.png" class="img" alt="Camisa fodastica">
-                    <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa Foda</h2>
-                    <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom gosto.
-                    </p>
-                    <div class="price txt-custon icon-save">
-                        R$ 99,99
-                        <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+    <section>
+            <h1 class="txt-custon-h1" style="margin-top: 90px;">
+                Loja
+            </h1>
+            <div class="container my-5">
+                <div class="row">
+                    <!-- Produto -->
+                    <div class="card col-md-3 container my-4">
+                        <img src="imgs/camisa1.png" class="img" alt="Camisa fodastica">
+                        <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa Foda</h2>
+                        <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom
+                            gosto.
+                        </p>
+                        <div class="price txt-custon icon-save">
+                            R$ 99,99
+                            <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                        </div>
+                        <button>Comprar</button>
                     </div>
-                    <button>Comprar</button>
-                </div>
-                <div class="card col-md-3 container my-4">
-                    <img src="imgs/camisa2.png" class="img" alt="Camisa fodastica">
-                    <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa Fodinha</h2>
-                    <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom gosto.
-                    </p>
-                    <div class="price txt-custon icon-save">
-                        R$ 99,99
-                        <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                    <div class="card col-md-3 container my-4">
+                        <img src="imgs/camisa2.png" class="img" alt="Camisa fodastica">
+                        <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa Fodinha</h2>
+                        <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom
+                            gosto.
+                        </p>
+                        <div class="price txt-custon icon-save">
+                            R$ 99,99
+                            <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                        </div>
+                        <button>Comprar</button>
                     </div>
-                    <button>Comprar</button>
-                </div>
-                <div class="card col-md-3 container my-4">
-                    <img src="imgs/camisa3.png" class="img" alt="Camisa fodastica">
-                    <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
-                    <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom gosto.
-                    </p>
-                    <div class="price txt-custon icon-save">
-                        R$ 99,99
-                        <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                    <div class="card col-md-3 container my-4">
+                        <img src="imgs/camisa3.png" class="img" alt="Camisa fodastica">
+                        <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
+                        <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom
+                            gosto.
+                        </p>
+                        <div class="price txt-custon icon-save">
+                            R$ 99,99
+                            <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                        </div>
+                        <button>Comprar</button>
                     </div>
-                    <button>Comprar</button>
-                </div>
-                <div class="w-100"></div>
-                <div class="card col-md-3 container my-4">
-                    <img src="imgs/camisa4.png" class="img" alt="Camisa fodastica">
-                    <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
-                    <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom gosto.
-                    </p>
-                    <div class="price txt-custon icon-save">
-                        R$ 99,99
-                        <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                    <div class="w-100"></div>
+                    <div class="card col-md-3 container my-4">
+                        <img src="imgs/camisa4.png" class="img" alt="Camisa fodastica">
+                        <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
+                        <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom
+                            gosto.
+                        </p>
+                        <div class="price txt-custon icon-save">
+                            R$ 99,99
+                            <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                        </div>
+                        <button>Comprar</button>
                     </div>
-                    <button>Comprar</button>
-                </div>
-                <div class="card col-md-3 container my-4">
-                    <img src="imgs/camisa5.png" class="img" alt="Camisa fodastica">
-                    <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
-                    <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom gosto.
-                    </p>
-                    <div class="price txt-custon icon-save">
-                        R$ 99,99
-                        <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                    <div class="card col-md-3 container my-4">
+                        <img src="imgs/camisa5.png" class="img" alt="Camisa fodastica">
+                        <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
+                        <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom
+                            gosto.
+                        </p>
+                        <div class="price txt-custon icon-save">
+                            R$ 99,99
+                            <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                        </div>
+                        <button>Comprar</button>
                     </div>
-                    <button>Comprar</button>
-                </div>
-                <div class="card col-md-3 container my-4">
-                    <img src="imgs/camisa6.png" class="img" alt="Camisa fodastica">
-                    <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
-                    <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom gosto.
-                    </p>
-                    <div class="price txt-custon icon-save">
-                        R$ 99,99
-                        <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                    <div class="card col-md-3 container my-4">
+                        <img src="imgs/camisa6.png" class="img" alt="Camisa fodastica">
+                        <h2 class="txt-custon" style="text-align: center; font-size: 40px;">Camisa fodona</h2>
+                        <p style="font-size: 15px; text-align: center; color: white">Fica foda em qualquer um com bom
+                            gosto.
+                        </p>
+                        <div class="price txt-custon icon-save">
+                            R$ 99,99
+                            <img src="imgs/coracao.vazio.png" style="margin-top: -40px; margin-right: 10px;">
+                        </div>
+                        <button>Comprar</button>
                     </div>
-                    <button>Comprar</button>
-                </div>
-                <div class="w-100"></div>
-                
+                    <div class="w-100"></div>
+    </section>
+    <div id="acessibilidade"></div>
+    <script>
+        //Carregar conteúdo do navbar
+        fetch('acessibilidade.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('acessibilidade').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar a acessibilidade:', error);
+            });
+    </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
