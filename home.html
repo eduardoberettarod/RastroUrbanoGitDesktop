@@ -35,14 +35,78 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-
-    <!-- Conteúdo principal -->
-    <h1 class="txt-custon" style="color: black; margin-top: 100px; font-size: 70px; text-align: center;">
-        Bem-vindo à Rastro Urbano
+    <section>
+        <div class="card-page-home" style="height: 50vh; width: 90%;">
+            <span class="bola"></span>
+            <span class="bola"></span>
+            <span class="bola"></span>
+            <span class="bola"></span>
+            <span class="bolao"></span>
+            <span class="bolao" style="left: 2%; top: 8%;"></span>
+            <h1 class="txt-custon-h1" style= "color: white; margin-top: 100px;">
+                Rastro Urbano
+        </div>
+    </section>
+    <section>
+    <h1 class="txt-custon" style=" margin-top: 100px; font-size: 70px; text-align: center;">
+        Mural de Artistas Urbanos
     </h1>
-
-
-
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin: 90px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imgs/mural1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 2rem;">Eduardo Kobra</h5>
+              <p style="color: white; font-size: 1.5rem;">Artista brasileiro conhecido por seus murais coloridos e realistas, que promovem mensagens de paz e sustentabilidade.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imgs/mural2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 2rem;">Os Gêmeos</h5>
+              <p style="color: white; font-size: 1.5rem;">Dupla de irmãos paulistanos que criam murais vibrantes, misturando elementos de fantasia e cultura popular brasileira.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/mural3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 2rem;">Cris Rodrigues</h5>
+              <p style="color: white; font-size: 1.5rem;">Artista urbana que utiliza técnicas de stencil para retratar temas sociais e culturais em suas obras.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/mural4.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 2rem;">Alexandre Orion</h5>
+              <p style="color: white; font-size: 1.5rem;">Artista que trabalha com intervenções urbanas, utilizando fuligem e poluição para criar arte e conscientizar sobre o meio ambiente.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/mural5.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 2rem;">Panmela Castro</h5>
+              <p style="color: white; font-size: 1.5rem;">Artista feminista que usa o grafite para abordar questões de gênero, empoderamento e direitos das mulheres.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 <div id="acessibilidade"></div>
     <script>
         //Carregar conteúdo do navbar
