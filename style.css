@@ -45,6 +45,7 @@ section {
   height: 100vh;
   width: 100%;
   position: relative;
+  margin-top: 90px;
 }
 
 .nav-link-txt1 {
@@ -325,24 +326,27 @@ textarea:valid~label {
   box-shadow: 0 0 5px #9B111E, 0 0 25px #9B111E, 0 0 50px #9B111E, 0 0 100px #9B111E, 0 0 200px #9B111E;
 }
 .btn-home {
-  position: absolute;
-  top: 70vh;
   background-color: #9B111E;
   text-decoration: none;
   color: white;
   font-size: 2rem;
   border: none;
-  padding: 20px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 0 5px #9B111E, 0 0 5px #9B111E;
   cursor: pointer;
   transition: box-shadow 500ms ease;
   font-family: 'Scream', sans-serif;
+  width: 100%;
+  text-align: center;
 }
-
 .btn-home:hover {
   box-shadow: 0 0 5px #9B111E, 0 0 25px #9B111E, 0 0 50px #9B111E, 0 0 100px #9B111E, 0 0 200px #9B111E;
 }
+.btn-home:active {
+  transform: scale(0.95);
+}
+
 
 .img-rs {
   max-width: 50px;
@@ -589,6 +593,25 @@ textarea:valid~label {
   width: 50%;
   height: 50%;
   z-index: -1;
-  fill: #9B111E;
 }
 
+.img-page {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  border-radius: 10px;
+}
+.img-page:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.txt-page-ne{
+  text-align: justify;
+  margin-top: 50px;
+  color: white;
+  font-size: 27px;
+  text-decoration: none;
+  margin-left: 20px;
+}

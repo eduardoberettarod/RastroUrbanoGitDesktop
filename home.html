@@ -2,134 +2,165 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rastro Urbano</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link href="imgs/logo.png" rel="icon" type="image/png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rastro Urbano</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="imgs/logo.png" rel="icon" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Carrossel de Frases -->
-    <div class="frase-carrossel bg-dark text-light">
-        <div class="frase-movendo bg-dark text-light">
-            <span>🚀 Bem-vindo à Rastro Urbano! | 🏙️ Explore nossa nova coleção urbana! | 📦 Frete grátis para compras
-                acima de R$200! | 📲 Siga-nos no Instagram @rastro.urbano</span>
-        </div>
+  <!-- Carrossel de Frases -->
+  <div class="frase-carrossel bg-dark text-light">
+    <div class="frase-movendo bg-dark text-light">
+      <span>🚀 Bem-vindo à Rastro Urbano! | 🏙️ Explore nossa nova coleção urbana! | 📦 Frete grátis para compras
+        acima de R$200! | 📲 Siga-nos no Instagram @rastro.urbano</span>
     </div>
-    <div id="navbar"></div>
-    <script>
-        //Carregar conteúdo do navbar
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Erro ao carregar o navbar:', error);
-            });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-    <section>
-        <div class="card-page-home" style="height: 50vh; width: 90%;">
-            <span class="bolao" style="right: 5%; top: 83%;"></span>
-            <span class="goteira"><img src="imgs/blood.jpeg" style="width: 200%; height: 200%; border-radius: 24px;"></span>
-            <h1 class="txt-custon-h1 blood" style= "color: white; margin-top: 100px;">Rastro Urbano</h1>
-            <p class="txt-custon">Moda com atitude, criada nas ruas para quem faz história.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <a href="loja.html" class="btn-home">VER COLEÇÕES</a>
+  </div>
+  <div id="navbar"></div>
+  <script>
+    //Carregar conteúdo do navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Erro ao carregar o navbar:', error);
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <section style="margin-top: 0;">
+    <div class="card-page-home" style="height: 50vh; width: 90%;">
+      <span class="bolao" style="right: 5%; top: 83%;"></span>
+      <span class="goteira"><img src="imgs/blood.jpeg" style="width: 200%; height: 200%; border-radius: 24px;"></span>
+      <h1 class="txt-custon-h1 blood" style="color: white; margin-top: 100px;">Rastro Urbano</h1>
+      <p class="txt-custon">Moda com atitude, criada nas ruas para quem faz história.</p>
+      <p class="txt-custon" style="font-size: 2rem; color: white;">Explore nossas coleções e conheça os artistas
+        urbanos que dão vida à nossa marca.</p>
+        
+     <div class="container">
+  <div class="row justify-content-center" style="margin-top: 30vh; margin-bottom: 50px; gap: 20px;">
+    <div class="col-12 col-md-5 d-flex justify-content-center">
+      <a href="loja.html" class="btn-home" style="letter-spacing: 2px">VER COLEÇÕES</a>
+    </div>
+    <div class="col-12 col-md-5 d-flex justify-content-center">
+      <a href="home.html#mural-artistas" class="btn-home" style="letter-spacing: 2px";>CONHEÇA OS ARTISTAS</a>
+    </div>
+  </div>
+</div>
+  </section>
+  <section>
+    <h1 class="txt-custon" style="margin-top: 100px; font-size: 70px; text-align: center; letter-spacing: 5px;">
+      Nossa Essência </h1>
+
+      <div class="container">
+        <div class="row justify-content-center" style="margin-top: 20px; margin-bottom: 50px;">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="imgs/pessoa1.png" alt="Foto Rastro Urbano" class="img-page">
           </div>
-          <div class="col-md-6">
-            <a href="home.html#mural-artistas" class="btn-home">CONHEÇA OS ARTISTAS</a>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <p class="txt-page-ne">
+                A Rastro Urbano é mais do que uma marca de moda, é um movimento que celebra a cultura urbana e a arte de rua.
+                Nossas coleções são inspiradas na energia das cidades, nas histórias contadas pelos muros e na criatividade dos
+                artistas urbanos. Cada peça é uma expressão única, feita para quem vive intensamente e não tem medo de deixar sua
+                marca no mundo.
+                Valorizamos a autenticidade, a diversidade e a liberdade de expressão, conectando pessoas que compartilham o desejo de transformar o cotidiano em arte. Trabalhamos em parceria com artistas locais, promovendo talentos e dando visibilidade a novas vozes da cena urbana.
+                Nosso compromisso vai além da moda: buscamos impactar positivamente a sociedade, apoiando projetos sociais e iniciativas culturais que fortalecem a identidade das comunidades. Na Rastro Urbano, cada coleção conta uma história, cada estampa carrega um propósito, e cada cliente faz parte dessa jornada criativa.
+                Vista-se de atitude, inspire-se na cidade e faça parte do movimento Rastro Urbano.
+            </p>
           </div>
-        </div>
-    </section>
-    <section id="mural-artistas">
+  </section>
+  <section id="mural-artistas" style="margin-top: 50vh;">
     <h1 class="txt-custon" style=" margin-top: 100px; font-size: 70px; text-align: center;">
-        Mural de Artistas Urbanos
+      Mural de Artistas Urbanos
     </h1>
-    
+
     <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin: 90px;">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="imgs/mural1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white; font-size: 2rem;">Eduardo Kobra</h5>
-              <p style="color: white; font-size: 1.5rem;">Artista brasileiro conhecido por seus murais coloridos e realistas, que promovem mensagens de paz e sustentabilidade.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="imgs/mural2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white; font-size: 2rem;">Os Gêmeos</h5>
-              <p style="color: white; font-size: 1.5rem;">Dupla de irmãos paulistanos que criam murais vibrantes, misturando elementos de fantasia e cultura popular brasileira.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/mural3.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white; font-size: 2rem;">Cris Rodrigues</h5>
-              <p style="color: white; font-size: 1.5rem;">Artista urbana que utiliza técnicas de stencil para retratar temas sociais e culturais em suas obras.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/mural4.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white; font-size: 2rem;">Alexandre Orion</h5>
-              <p style="color: white; font-size: 1.5rem;">Artista que trabalha com intervenções urbanas, utilizando fuligem e poluição para criar arte e conscientizar sobre o meio ambiente.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/mural5.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white; font-size: 2rem;">Panmela Castro</h5>
-              <p style="color: white; font-size: 1.5rem;">Artista feminista que usa o grafite para abordar questões de gênero, empoderamento e direitos das mulheres.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
-    </section>
-<div id="acessibilidade"></div>
-    <script>
-        //Carregar conteúdo do navbar
-        fetch('acessibilidade.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('acessibilidade').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Erro ao carregar a acessibilidade:', error);
-            });
-    </script>
-    <script type="module" src="js/main.js"></script>
-    
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="imgs/mural1.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; font-size: 2rem;">Eduardo Kobra</h5>
+            <p style="color: white; font-size: 1.5rem;">Artista brasileiro conhecido por seus murais coloridos e
+              realistas, que promovem mensagens de paz e sustentabilidade.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="imgs/mural2.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; font-size: 2rem;">Os Gêmeos</h5>
+            <p style="color: white; font-size: 1.5rem;">Dupla de irmãos paulistanos que criam murais vibrantes,
+              misturando elementos de fantasia e cultura popular brasileira.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/mural3.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; font-size: 2rem;">Cris Rodrigues</h5>
+            <p style="color: white; font-size: 1.5rem;">Artista urbana que utiliza técnicas de stencil para retratar
+              temas sociais e culturais em suas obras.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/mural4.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; font-size: 2rem;">Alexandre Orion</h5>
+            <p style="color: white; font-size: 1.5rem;">Artista que trabalha com intervenções urbanas, utilizando
+              fuligem e poluição para criar arte e conscientizar sobre o meio ambiente.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/mural5.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; font-size: 2rem;">Panmela Castro</h5>
+            <p style="color: white; font-size: 1.5rem;">Artista feminista que usa o grafite para abordar questões de
+              gênero, empoderamento e direitos das mulheres.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <div id="acessibilidade"></div>
+  <script>
+    //Carregar conteúdo do navbar
+    fetch('acessibilidade.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('acessibilidade').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Erro ao carregar a acessibilidade:', error);
+      });
+  </script>
+  <script type="module" src="js/main.js"></script>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+  </script>
 </body>
 
 </html>
