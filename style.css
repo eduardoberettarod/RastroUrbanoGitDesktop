@@ -611,7 +611,14 @@ textarea:valid~label {
   text-align: justify;
   margin-top: 50px;
   color: white;
-  font-size: 27px;
+  font-size: 25px;
   text-decoration: none;
   margin-left: 20px;
+}
+#container3D canvas{
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
