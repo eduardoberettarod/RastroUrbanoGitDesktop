@@ -570,6 +570,7 @@ textarea:valid~label {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
+  margin-top: 50%;
   background-color: black;
   /* Define a cor de fundo das setas */
   border-radius: 50%;
@@ -608,17 +609,120 @@ textarea:valid~label {
 }
 
 .txt-page-ne{
-  text-align: justify;
+  text-align: left;
   margin-top: 50px;
   color: white;
   font-size: 25px;
   text-decoration: none;
   margin-left: 20px;
 }
-#container3D canvas{
-  width: 100vw !important;
-  height: 100vh !important;
-  position: absolute;
-  top: 0;
-  left: 0;
+body > *:not(.footer-rastro) {
+  flex: 1 0 auto; /* Cresce e ocupa o espaço disponível */
+}
+
+/* Footer fixo na base */
+.footer-rastro {
+  position: relative;
+  flex-shrink: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 40px;
+  border-top: 3px solid #e10600;
+  box-shadow: 0 -2px 8px rgba(225, 0, 0, 0.4);
+  height: 200px;
+  width: 129.8%;
+  left: -15%;
+}
+
+/* Container interno do footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Logo */
+.footer-logo h2 {
+  color: #e10600;
+  font-size: 3rem ;
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Scream', sans-serif;
+}
+
+/* Links do footer */
+.footer-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #e10600;
+  text-decoration: underline;
+}
+
+/* Contato */
+.footer-contato p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.footer-contato strong {
+  color: #e10600;
+}
+
+/* Redes sociais */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  background-color: #e10600;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #a40000;
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+}
+
+footer{
+  position: fixed;
+  height: 100%;
 }
